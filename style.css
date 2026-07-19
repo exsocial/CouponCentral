@@ -5,6 +5,7 @@ body, html {
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
+    background-color: #f4f4f9; /* Added a light background for better contrast */
 }
 
 .container {
@@ -12,23 +13,25 @@ body, html {
 }
 
 h1 {
-    font-weight: 800; /* BOLD title */
-    font-size: 3rem;
-    margin-bottom: 30px;
+    font-weight: 900; /* Extra bold */
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 40px;
 }
 
-.buttons {
-    display: flex;
-    flex-direction: column; /* Stacks buttons vertically */
-    gap: 20px; /* Space between buttons */
-}
-
-.btn {
-    padding: 15px 40px;
-    background-color: #007bff;
+/* The new prominent button style */
+.btn-primary {
+    padding: 20px 50px;
+    background-color: #28a745; /* Green color for "Winning" */
     color: white;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold; /* BOLD button text */
-    font-size: 1.2rem;
+    border-radius: 50px; /* Rounded pill shape */
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05); /* Slight pop effect on hover */
 }
