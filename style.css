@@ -5,33 +5,23 @@ body, html {
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
-    background-color: #f4f4f9; /* Added a light background for better contrast */
+    background-color: #f4f4f9;
 }
 
-.container {
-    text-align: center;
-}
+.container { text-align: center; }
 
-h1 {
-    font-weight: 900; /* Extra bold */
-    font-size: 3.5rem;
-    color: #333;
-    margin-bottom: 40px;
-}
+h1 { font-weight: 900; font-size: 3rem; color: #333; margin-bottom: 30px; }
 
-/* The new prominent button style */
 .btn-primary {
-    padding: 20px 50px;
-    background-color: #28a745; /* Green color for "Winning" */
+    padding: 15px 40px;
+    background-color: #28a745;
     color: white;
     text-decoration: none;
-    border-radius: 50px; /* Rounded pill shape */
+    border-radius: 50px;
     font-weight: bold;
-    font-size: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 1.2rem;
+    display: inline-block;
     transition: transform 0.2s;
 }
 
-.btn-primary:hover {
-    transform: scale(1.05); /* Slight pop effect on hover */
-}
+input { padding: 15px; font-size: 1.2rem; text-align: center; border-radius: 10px; border: 1px solid #ccc; width: 250px; }
