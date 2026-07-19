@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Unlock Profile</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter PIN to Unlock</h2>
+        <form onsubmit="checkPin(event)">
+            <input type="text" id="pin" placeholder="Enter PIN" required>
+            <br><br>
+            <button type="submit" class="btn-primary">Unlock Profile</button>
+        </form>
+    </div>
+
+    <script>
+    function checkPin(event) {
+        event.preventDefault();
+        const pin = document.getElementById('pin').value;
+        if (pin === "1CN5588") {
+            window.location.href = "account.html";
+        } else {
+            alert("Incorrect PIN.");
+        }
+    }
+    </script>
+</body>
+</html>
 
